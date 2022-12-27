@@ -7,6 +7,8 @@ SELECT AVG(col_1), MAX(col_2), SUM(col_3) FROM table_1;
 ## 1.2: GROUP BY statement
 1. logic: groups rows that have the same values into summary rows; 
 2. It is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+    * it will first split columns based on the group by column;
+    * select must have aggregation functions or be in the group by statement; 
 ```roomsql
 /*customer_id and staff_id must appear in group by statement
 it means to show the customer_id and its corresponding staff_id*/

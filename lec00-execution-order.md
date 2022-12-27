@@ -1,10 +1,8 @@
-```roomsql
-FROM /* including JOINs*/
-* WHERE
-SELECT /*the row obtained by from and where in a temporary area for others operation (and build the column alias)*/
-DISTINCT
-* GROUP BY
-HAVING
-* ORDER BY
-LIMIT and OFFSET /* return the final result*/
-```
+## Execution Order
+1. FROM and JOINs: are first executed to determine the total working set of data that is being queried.
+2. WHERE: first filter
+3. GROUP BY: 
+4. HAVING: further filter based on the group 
+5. SELECT: 
+6. ORDER BY:
+7. LIMIT:
